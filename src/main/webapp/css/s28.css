@@ -27,8 +27,8 @@ p.myClass {
 }
 
 #blockId {
-    border: 3px solid #ff8000;
     background-color: #ffff80;
+    border: 3px solid #ff8000;
 }
 
 .boldCls {
@@ -41,4 +41,12 @@ p.myClass {
 
 .upperCls {
     text-transform: uppercase;
+}
+
+li:first-child {
+    color: purple;
+}
+
+p::first-letter {
+    color: white;
 }
