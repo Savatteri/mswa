@@ -2,12 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Slide 45</title>
+<title>AJAX</title>
 </head>
 <body>
     <h1>Asynchronous JavaScript And XML</h1>
     <p>
-        Back to <a href=".#js">home</a>
+        Back <a href="..#js">home</a>
     </p>
 
     <textarea id="target" rows="20" cols="80"></textarea>
@@ -46,23 +46,22 @@
 
             if (this.status != 200) {
                 target.value += "[Something went wrong: " + this.status + "]\n";
-                return;
+            } else {
+                target.value += this.responseText;
             }
-
-            target.value += this.responseText;
         }
 
         function getTextDetailed() {
             let request = new XMLHttpRequest();
             request.onreadystatechange = callback;
-            request.open("GET", "/mswa/s50.txt");
+            request.open("GET", "s50.txt");
             request.send();
         }
 
         function getText() {
             let request = new XMLHttpRequest();
             request.onload = callback;
-            request.open("GET", "/mswa/s50.txt");
+            request.open("GET", "/mswa/m3/s50.txt");
             request.send();
         }
     </script>
