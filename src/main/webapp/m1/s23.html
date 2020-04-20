@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>INPUT CHECKBOX</title>
+    <meta charset="utf-8">
+    <title>input</title>
 </head>
+
 <body>
-    <h1>input checkbox</h1>
+    <h1>input</h1>
 
     <p>
-        Back <a href="..">home</a>
+        Back <a href=".">home</a>
     </p>
 
     <!-- !!! no action specified !!! -->
     <form>
         <div>
-            <input type="checkbox" id="langJ" name="lang" value="Java" checked>
-            <label for="langJ">Java</label>
-            <input type="checkbox" id="langPy" name="lang" value="Python">
-            <label for="langPy">Python</label>
-            <input type="checkbox" id="langCpp" name="lang" value="Cpp" checked>
-            <label for="langCpp">C++</label>
+            A-value: <input type="text" name="a" value="A">
         </div>
         <div>
-            <input type="submit" value="Enter">
+            B-value: <input type="text" name="b" placeholder="Put your b value here">
+        </div>
+        <div>
+            C-value: <input type="text" name="c" required>
+        </div>
+        <div>
+            D-value: <input type="text" name="d" size="15" maxlength="30">
+        </div>
+        <div>
+            Password: <input type="password" name="pwd" maxlength="30" required>
+        </div>
+        <div>
+            <input type="hidden" name="invisible" value="notShowed">
+        </div>
+        <div>
+            Date: <input type="date" name="milestone">
+        </div>
+        <div>
+            Your comment:<br>
+            <textarea name="comment">Enter your comment here.</textarea>
+        </div>
+        <div>
+            <input type="submit" value="Enter" />
         </div>
     </form>
 </body>
+
 </html>

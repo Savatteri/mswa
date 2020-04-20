@@ -3,28 +3,28 @@
 
 <head>
     <meta charset="utf-8">
-    <title>div vs span</title>
+    <title>id vs class</title>
 </head>
 
 <body>
-    <h1>div vs span</h1>
+    <h1>id vs class</h1>
 
     <p>
         Back <a href=".">home</a>
     </p>
 
-    <div>
-        <p>This paragraph and the following list are in the same "div" block.</p>
+    <div id="blockId">
+        <p>The current div is uniquely identified</p>
         <ul>
             <li>One</li>
             <li>Two</li>
-            <li>Three</li>
+            <li class="special">Three</li>
             <li>Four</li>
         </ul>
     </div>
 
     <p>
-        This is a plain paragraph containing <span>an inline group</span>, known as a "span".
+        The <span class="special">span here</span> has the same class of list item three.
     </p>
 </body>
 
