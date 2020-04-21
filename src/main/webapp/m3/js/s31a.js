@@ -3,7 +3,7 @@
  */
 
 window.onload = () => {
-    console.log('Document loaded /1');
+    console.log('Document loaded');
 };
 
 //window.addEventListener('load', () => {

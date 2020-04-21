@@ -1,51 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Operators /1</title>
+    <meta charset="utf-8">
+    <title>class</title>
+    <script type="text/javascript" src="js/s36.js" defer></script>
 </head>
+
 <body>
-    <h1>Operators /1</h1>
+    <h1>class</h1>
 
     <p>
-        Back <a href="..#js">home</a>
+        Back <a href=".#jsClass">home</a>
     </p>
 
-    <textarea id="target" rows="20" cols="80"></textarea>
-
-    <script type="text/javascript">
-        let target = document.getElementById('target');
-
-        let value = 2 + 3;
-        target.value += value + '\n';
-
-        value = 2 - 3;
-        target.value += value + '\n';
-
-        value = 2 * 3;
-        target.value += value + '\n';
-
-        value = 2 / 3;
-        target.value += value + '\n';
-
-        value = 2 % 3;
-        target.value += value + '\n';
-
-        value = 2 ** 3;
-        target.value += value + '\n';
-
-        // obsolete
-        value = Math.pow(2, 3);
-        target.value += value + '\n';
-
-        target.value += 'pre-increase: ' + ++value + '\n';
-        target.value += 'pre-decrease: ' + --value + '\n';
-        target.value += 'post-increase: ' + value++ + ', ';
-        target.value += value + '\n';
-        target.value += 'post-decrease: ' + value-- + ', ';
-        target.value += value + '\n';
-
-        console.log("bye");
-    </script>
+    <button onclick="log36('Tom', 'Jones');">Log Tom</button>
 </body>
+
 </html>

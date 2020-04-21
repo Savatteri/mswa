@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>Functions</title>
+    <meta charset="utf-8">
+    <title>Function</title>
 </head>
+
 <body>
-    <h1>Functions</h1>
+    <h1>Function</h1>
 
     <p>
-        Back <a href="..#js">home</a>
+        Back <a href=".">home</a>
     </p>
 
     <textarea id="target" rows="20" cols="80"></textarea>
@@ -19,21 +21,26 @@
         }
 
         f();
-        
-        let x = function() {
+
+        let x = function () {
             console.log('anonymous function');
         }
-        
+
         x();
-        
+
+        let target = document.getElementById('target');
+
         function g(a, b) {
             return a + b;
         }
 
-        let target = document.getElementById('target');
-
         target.value += g(2, 3) + '\n';
         target.value += g('Hello', 'World') + '\n';
-     </script>
+
+        let adder = (a, b) => a + b;
+        target.value += adder(2, 3) + '\n';
+        target.value += adder('Hello', 'World') + '\n';
+    </script>
 </body>
+
 </html>

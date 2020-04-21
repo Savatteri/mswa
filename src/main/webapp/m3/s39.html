@@ -1,31 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>String /1</title>
+    <meta charset="utf-8">
+    <title>static</title>
+    <script type="text/javascript" src="js/s39.js" defer></script>
 </head>
+
 <body>
-    <h1>String /1</h1>
+    <h1>static</h1>
 
     <p>
-        Back <a href="..#js">home</a>
+        Back <a href=".#jsClass">home</a>
     </p>
 
-    <textarea id="target" rows="20" cols="80"></textarea>
-
-    <script type="text/javascript">
-        let target = document.getElementById('target');
-
-        let value = 'Solution' + 42;
-        let check = 'Solution' + 42 === 'Solution42';
-        target.value += check + '\n';
-
-        let a = 42;
-        check = a.toString() === '42';
-        target.value += check + '\n';
-
-        check = Number('42') === 42;
-        target.value += check + '\n';
-    </script>
+    <button onclick="log39('Jon', 'Voight', 2000);">Log Employee</button>
 </body>
+
 </html>

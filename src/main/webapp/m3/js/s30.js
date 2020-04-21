@@ -3,8 +3,8 @@
  */
 
 document.getElementById('second').addEventListener('submit', (event) => {
-    if (document.getElementById('z').value.length == 0) {
-        console.log('z is empty!');
+    if (document.getElementById('y').value.length == 0) {
+        console.log('y is empty!');
         event.preventDefault();
     }
 });

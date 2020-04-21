@@ -33,10 +33,8 @@ box.ondblclick = (event) => {
 
 box.onmouseover = (event) => {
     console.log('Mouse over the box', event.screenX, event.screenY);
-    box.style.width = "50%";
 };
 
 box.onmouseout = (event) => {
     console.log('Mouse out of the box', event.screenX, event.screenY);
-    box.style.width = "100px";
 };
